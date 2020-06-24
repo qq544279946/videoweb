@@ -84,6 +84,7 @@ export default {
           border-radius: 4px;
           cursor: pointer;
         }
+        
         .left-nav {
           span {
             font-size: 14px;
