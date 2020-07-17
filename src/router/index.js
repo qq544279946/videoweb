@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Home from '../views/home/Home.vue'
+import Login from '../views/login/Login.vue'
+import Catagory from '../views/catagory/Catagory.vue'
 
 Vue.use(VueRouter)
 
@@ -13,6 +15,18 @@ Vue.use(VueRouter)
     {
       path:'/',
       redirect:'/home'
+    },
+   
+    {
+      path:'/login',
+      component:Login,
+      meta:{
+        notShowHeader:true
+      }
+    },
+    {
+      path:'/catagory',
+      component:Catagory
     }
   ]
 
